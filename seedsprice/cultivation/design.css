@@ -1,0 +1,39 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Times New Roman', Times, serif;
+  color: #343b42;
+  padding: 20px;
+  background: rgb(84,208,221);
+
+}
+.leftcolumn {   
+  float: left;
+  width: auto;
+}
+
+.fakeimg {
+  background-color: rgb(84,208,221);
+  width: auto;
+  padding: auto;
+}
+
+.fakeimg.p{
+    float: left;
+    width: auto;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+@media screen and (max-width: 800px) {
+  .leftcolumn, .rightcolumn {   
+    width: 100%;
+    padding: 0;
+  }
+}
